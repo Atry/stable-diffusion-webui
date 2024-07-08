@@ -1,5 +1,17 @@
 {
   "nodes": {
+    "StableSR_webui_768v_139_ckpt": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-/etvBVeRHbFLgsIwjTv1GE2SHWdVJk+RiYm0lgwDSRs=",
+        "type": "file",
+        "url": "https://huggingface.co/Iceclear/StableSR/resolve/main/webui_768v_139.ckpt?download=true"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://huggingface.co/Iceclear/StableSR/resolve/main/webui_768v_139.ckpt?download=true"
+      }
+    },
     "conda-channels": {
       "flake": false,
       "locked": {
@@ -773,6 +785,7 @@
     },
     "root": {
       "inputs": {
+        "StableSR_webui_768v_139_ckpt": "StableSR_webui_768v_139_ckpt",
         "nix-ml-ops": "nix-ml-ops",
         "stable-diffusion_v2-1_768-ema-pruned_safetensors": "stable-diffusion_v2-1_768-ema-pruned_safetensors"
       }

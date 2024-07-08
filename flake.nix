@@ -9,6 +9,10 @@
       url = "https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.safetensors?download=true";
       flake = false;
     };
+    StableSR_webui_768v_139_ckpt = {
+      url = "https://huggingface.co/Iceclear/StableSR/resolve/main/webui_768v_139.ckpt?download=true";
+      flake = false;
+    };
   };
   outputs = inputs @ { nix-ml-ops, ... }:
     nix-ml-ops.lib.mkFlake { inherit inputs; } {
@@ -27,8 +31,12 @@
             "${pkgs.glib.out}/lib"
             "${pkgs.libGL}/lib"
           ];
+          nixago.requests."extensions/sd-webui-stablesr/models/webui_768v_139.ckpt" = {
+            data = { };
+            engine = { data, output, ... }: inputs.StableSR_webui_768v_139_ckpt;
+          };
           nixago.requests."models/Stable-diffusion/v2-1_768-ema-pruned.safetensors" = {
-            data = {};
+            data = { };
             engine = { data, output, ... }: inputs.stable-diffusion_v2-1_768-ema-pruned_safetensors;
           };
           devenvShellModule = {

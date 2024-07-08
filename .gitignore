@@ -47,5 +47,6 @@ result
 .pre-commit-config.yaml
 
 # nixago: ignore-linked-files
+/extensions/sd-webui-stablesr/models/webui_768v_139.ckpt
 /models/Stable-diffusion/v2-1_768-ema-pruned.safetensors
 /.vscode/extensions.json
