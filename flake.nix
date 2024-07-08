@@ -4,6 +4,11 @@
     # See https://discourse.nixos.org/t/nix-flakes-and-private-repositories/12014
     nix-ml-ops.url = "github:Atry/nix-ml-ops";
     nix-ml-ops.inputs.systems.url = "github:nix-systems/default";
+
+    stable-diffusion_v2-1_768-ema-pruned_safetensors = {
+      url = "https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.safetensors?download=true";
+      flake = false;
+    };
   };
   outputs = inputs @ { nix-ml-ops, ... }:
     nix-ml-ops.lib.mkFlake { inherit inputs; } {
@@ -22,14 +27,20 @@
             "${pkgs.glib.out}/lib"
             "${pkgs.libGL}/lib"
           ];
-
+          nixago.requests."models/Stable-diffusion/v2-1_768-ema-pruned.safetensors" = {
+            data = {};
+            engine = { data, output, ... }: inputs.stable-diffusion_v2-1_768-ema-pruned_safetensors;
+          };
           devenvShellModule = {
             languages = {
               python = {
                 enable = true;
                 venv = {
                   enable = true;
-                  requirements = builtins.readFile ./requirements.txt;
+                  requirements = ''
+                    ${builtins.readFile ./requirements.txt}
+                    xformers
+                  '';
                 };
               };
             };

@@ -47,4 +47,5 @@ result
 .pre-commit-config.yaml
 
 # nixago: ignore-linked-files
+/models/Stable-diffusion/v2-1_768-ema-pruned.safetensors
 /.vscode/extensions.json
