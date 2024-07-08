@@ -39,3 +39,12 @@ notification.mp3
 /.coverage*
 /test/test_outputs
 /cache
+.direnv/
+.devenv/
+/.venv/
+.envrc.private
+result
+.pre-commit-config.yaml
+
+# nixago: ignore-linked-files
+/.vscode/extensions.json
