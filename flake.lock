@@ -787,6 +787,7 @@
       "inputs": {
         "StableSR_webui_768v_139_ckpt": "StableSR_webui_768v_139_ckpt",
         "nix-ml-ops": "nix-ml-ops",
+        "stable-diffusion_v1-5-pruned-emaonly_safetensors": "stable-diffusion_v1-5-pruned-emaonly_safetensors",
         "stable-diffusion_v2-1_768-ema-pruned_safetensors": "stable-diffusion_v2-1_768-ema-pruned_safetensors"
       }
     },
@@ -815,6 +816,18 @@
         "owner": "oxalica",
         "repo": "rust-overlay",
         "type": "github"
+      }
+    },
+    "stable-diffusion_v1-5-pruned-emaonly_safetensors": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-VSuFOrnagcX1Fli+B4Pja1xiJ7tjGQaR0PizGZqDnfE=",
+        "type": "file",
+        "url": "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.safetensors?download=true"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.safetensors?download=true"
       }
     },
     "stable-diffusion_v2-1_768-ema-pruned_safetensors": {
