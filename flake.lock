@@ -5,11 +5,11 @@
       "locked": {
         "narHash": "sha256-/etvBVeRHbFLgsIwjTv1GE2SHWdVJk+RiYm0lgwDSRs=",
         "type": "file",
-        "url": "https://huggingface.co/Iceclear/StableSR/resolve/main/webui_768v_139.ckpt?download=true"
+        "url": "https://www.modelscope.cn/models/popatry/StableSR/resolve/master/webui_768v_139.ckpt"
       },
       "original": {
         "type": "file",
-        "url": "https://huggingface.co/Iceclear/StableSR/resolve/main/webui_768v_139.ckpt?download=true"
+        "url": "https://www.modelscope.cn/models/popatry/StableSR/resolve/master/webui_768v_139.ckpt"
       }
     },
     "conda-channels": {
@@ -823,11 +823,11 @@
       "locked": {
         "narHash": "sha256-VSuFOrnagcX1Fli+B4Pja1xiJ7tjGQaR0PizGZqDnfE=",
         "type": "file",
-        "url": "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.safetensors?download=true"
+        "url": "https://modelscope.cn/models/AI-ModelScope/stable-diffusion-v1-5/resolve/master/v1-5-pruned-emaonly.safetensors"
       },
       "original": {
         "type": "file",
-        "url": "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.safetensors?download=true"
+        "url": "https://modelscope.cn/models/AI-ModelScope/stable-diffusion-v1-5/resolve/master/v1-5-pruned-emaonly.safetensors"
       }
     },
     "stable-diffusion_v2-1_768-ema-pruned_safetensors": {
@@ -835,11 +835,11 @@
       "locked": {
         "narHash": "sha256-1+cTOw+VOLE9ceQfHM+jQraRwRPAQz9OeL3Qd8C/s2g=",
         "type": "file",
-        "url": "https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.safetensors?download=true"
+        "url": "https://modelscope.cn/models/AI-ModelScope/stable-diffusion-2-1/resolve/master/v2-1_768-ema-pruned.safetensors"
       },
       "original": {
         "type": "file",
-        "url": "https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.safetensors?download=true"
+        "url": "https://modelscope.cn/models/AI-ModelScope/stable-diffusion-2-1/resolve/master/v2-1_768-ema-pruned.safetensors"
       }
     },
     "systems": {

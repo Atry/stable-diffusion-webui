@@ -6,15 +6,15 @@
     nix-ml-ops.inputs.systems.url = "github:nix-systems/default";
 
     stable-diffusion_v2-1_768-ema-pruned_safetensors = {
-      url = "https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.safetensors?download=true";
+      url = "https://modelscope.cn/models/AI-ModelScope/stable-diffusion-2-1/resolve/master/v2-1_768-ema-pruned.safetensors";
       flake = false;
     };
     stable-diffusion_v1-5-pruned-emaonly_safetensors = {
-      url = "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.safetensors?download=true";
+      url = "https://modelscope.cn/models/AI-ModelScope/stable-diffusion-v1-5/resolve/master/v1-5-pruned-emaonly.safetensors";
       flake = false;
     };
     StableSR_webui_768v_139_ckpt = {
-      url = "https://huggingface.co/Iceclear/StableSR/resolve/main/webui_768v_139.ckpt?download=true";
+      url = "https://www.modelscope.cn/models/popatry/StableSR/resolve/master/webui_768v_139.ckpt";
       flake = false;
     };
   };
