@@ -53,10 +53,11 @@
                 enable = true;
                 venv = {
                   enable = true;
-                  requirements = ''
-                    ${builtins.readFile ./requirements.txt}
-                    xformers
-                  '';
+                  requirements = lib.mkMerge [
+                    (builtins.readFile ./requirements.txt)
+                    "xformers"
+                    "insightface"
+                  ];
                 };
               };
             };
