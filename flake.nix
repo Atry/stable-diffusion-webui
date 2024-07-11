@@ -18,14 +18,16 @@
       flake = false;
     };
   };
-  outputs = inputs @ { nix-ml-ops, ... }:
-    nix-ml-ops.lib.mkFlake { inherit inputs; } {
+  outputs = inputs :
+    inputs.nix-ml-ops.lib.mkFlake { inherit inputs; } {
       imports = [
-        nix-ml-ops.flakeModules.devcontainer
-        nix-ml-ops.flakeModules.nixIde
-        nix-ml-ops.flakeModules.nixLd
-        nix-ml-ops.flakeModules.pythonVscode
-        nix-ml-ops.flakeModules.ldFallbackManylinux
+        inputs.nix-ml-ops.flakeModules.devcontainer
+        inputs.nix-ml-ops.flakeModules.nixIde
+        inputs.nix-ml-ops.flakeModules.nixLd
+        inputs.nix-ml-ops.flakeModules.pythonVscode
+        inputs.nix-ml-ops.flakeModules.ldFallbackManylinux
+        inputs.nix-ml-ops.flakeModules.cuda
+        inputs.nix-ml-ops.flakeModules.linkNvidiaDrivers
       ];
       perSystem = { pkgs, config, lib, system, ... }: {
         ml-ops.devcontainer = {
