@@ -17,11 +17,11 @@
       "locked": {
         "narHash": "sha256-Z+wA78/cliECU74CAOrwRtWaKf3gFx2LJLFFB+SO5BY=",
         "type": "file",
-        "url": "https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base_caption_capfilt_large.pth"
+        "url": "https://www.modelscope.cn/models/popatry/BLIP/resolve/master/models/model_base_caption_capfilt_large.pth"
       },
       "original": {
         "type": "file",
-        "url": "https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base_caption_capfilt_large.pth"
+        "url": "https://www.modelscope.cn/models/popatry/BLIP/resolve/master/models/model_base_caption_capfilt_large.pth"
       }
     },
     "conda-channels": {
