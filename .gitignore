@@ -47,6 +47,7 @@ result
 .pre-commit-config.yaml
 
 # nixago: ignore-linked-files
+/models/BLIP/model_base_caption_capfilt_large.pth
 /models/Stable-diffusion/v1-5-pruned-emaonly.safetensors
 /extensions/sd-webui-stablesr/models/webui_768v_139.ckpt
 /models/Stable-diffusion/v2-1_768-ema-pruned.safetensors
