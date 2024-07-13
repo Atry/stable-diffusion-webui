@@ -1,3 +1,6 @@
 [submodule "repositories/stable-diffusion-stability-ai"]
 	path = repositories/stable-diffusion-stability-ai
 	url = https://github.com/Stability-AI/stablediffusion.git
+[submodule "repositories/BLIP"]
+	path = repositories/BLIP
+	url = https://github.com/salesforce/BLIP.git
